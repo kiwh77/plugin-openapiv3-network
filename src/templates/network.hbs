@@ -1,0 +1,12 @@
+import { createNetwork } from 'wuhao-network'; 
+import services from './service'; 
+
+{{#each servers}}
+export const BaseUrl = {{this.url}}
+{{/each}}
+
+const network = createNetwork({ 
+  services
+})
+
+export default network

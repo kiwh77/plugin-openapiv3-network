@@ -1,0 +1,37 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "outDir": ".",
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "declaration": true,
+    "declarationDir": "./types/",
+    "declarationMap": false,
+    "moduleResolution": "node",
+    "module": "esnext",
+    "target": "es5",
+    "baseUrl": "./",
+    "types": [
+      "node",
+    ],
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "lib": [
+      "ES2015"
+    ],
+  },
+  "include": [
+    "src/**/*.ts",
+    "@types/jest",
+  ],
+  "exclude": [
+    "node_modules",
+    "tests/**/*.test.ts"
+  ]
+}

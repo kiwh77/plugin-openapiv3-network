@@ -1,0 +1,12 @@
+{{#each components.schemas}}
+{{#is this.type 'object'}}
+export interface {{@key}} {
+  {{#each this.properties}}
+  /** {this.description} */
+  {@key}: {this.type};
+
+  {{/each}}
+}
+
+{{/is}}
+{{/each}}
